@@ -493,3 +493,15 @@
     background: linear-gradient(to top, #a5cfee, #3f70ac 100%);
   }
   
+  /* ================
+  // Joe Stuff
+  // ==============*/
+  .callout {
+      position: absolute;
+      top:300px;
+      left:10%;
+      right:10%;
+
+      border: 1px solid #ccc;
+      background: ;
+  }
