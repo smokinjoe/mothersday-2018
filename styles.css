@@ -1,0 +1,632 @@
+.happy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    height: 100%;
+    width: 100%;
+    font-size: 12vmin;
+  }
+  .happy text {
+    text-anchor: middle;
+  }
+  .happy tspan {
+    stroke: transparent;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 2;
+    fill: transparent;
+  }
+  .happy tspan:nth-child(1) {
+    -webkit-animation: draw 2s 1.55s forwards;
+            animation: draw 2s 1.55s forwards;
+  }
+  .happy tspan:nth-child(2) {
+    -webkit-animation: draw 2s 1.6s forwards;
+            animation: draw 2s 1.6s forwards;
+  }
+  .happy tspan:nth-child(3) {
+    -webkit-animation: draw 2s 1.65s forwards;
+            animation: draw 2s 1.65s forwards;
+  }
+  .happy tspan:nth-child(4) {
+    -webkit-animation: draw 2s 1.7s forwards;
+            animation: draw 2s 1.7s forwards;
+  }
+  .happy tspan:nth-child(5) {
+    -webkit-animation: draw 2s 1.75s forwards;
+            animation: draw 2s 1.75s forwards;
+  }
+  .happy tspan:nth-child(6) {
+    -webkit-animation: draw 2s 1.75s forwards;
+            animation: draw 2s 1.75s forwards;
+  }
+
+  @-webkit-keyframes draw {
+    20%,
+    80% {
+      fill: transparent;
+      stroke: #fff;
+    }
+    100% {
+      fill: #fff;
+      stroke: transparent;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes draw {
+    20%,
+    80% {
+      fill: transparent;
+      stroke: #fff;
+    }
+    100% {
+      fill: #fff;
+      stroke: transparent;
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
+  }
+  .flow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 70%;
+    max-width: 8em;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    -webkit-filter: drop-shadow(0 0 1em #33ff9c);
+            filter: drop-shadow(0 0 1em #33ff9c);
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  
+  .ribbon {
+    float: left;
+    height: 100%;
+    width: 10%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+  }
+  .ribbon:first-child {
+    border-radius: 0 0 0 2em;
+  }
+  .ribbon:last-child {
+    border-radius: 0 0 2em 0;
+  }
+  .ribbon:nth-child(1) {
+    -webkit-animation: drop 1s 0.05s forwards, shimmer 2s 0.05s infinite;
+            animation: drop 1s 0.05s forwards, shimmer 2s 0.05s infinite;
+    background: linear-gradient(to bottom, #33ffeb 25%, #e7ff33 50%, #99ff33 75%, #ff5f33 100%);
+  }
+  .ribbon:nth-child(2) {
+    -webkit-animation: drop 1s 0.1s forwards, shimmer 2s 0.1s infinite;
+            animation: drop 1s 0.1s forwards, shimmer 2s 0.1s infinite;
+    background: linear-gradient(to bottom, #33ff99 25%, #33ccff 50%, #b4ff33 75%, #33ff77 100%);
+  }
+  .ribbon:nth-child(3) {
+    -webkit-animation: drop 1s 0.15s forwards, shimmer 2s 0.15s infinite;
+            animation: drop 1s 0.15s forwards, shimmer 2s 0.15s infinite;
+    background: linear-gradient(to bottom, #77ff33 25%, #fff833 50%, #ffb133 75%, #5233ff 100%);
+  }
+  .ribbon:nth-child(4) {
+    -webkit-animation: drop 1s 0.2s forwards, shimmer 2s 0.2s infinite;
+            animation: drop 1s 0.2s forwards, shimmer 2s 0.2s infinite;
+    background: linear-gradient(to bottom, #ddff33 25%, #52ff33 50%, #33ff74 75%, #4433ff 100%);
+  }
+  .ribbon:nth-child(5) {
+    -webkit-animation: drop 1s 0.25s forwards, shimmer 2s 0.25s infinite;
+            animation: drop 1s 0.25s forwards, shimmer 2s 0.25s infinite;
+    background: linear-gradient(to bottom, #33aaff 25%, #ff7433 50%, #33fcff 75%, #33ff6d 100%);
+  }
+  .ribbon:nth-child(6) {
+    -webkit-animation: drop 1s 0.3s forwards, shimmer 2s 0.3s infinite;
+            animation: drop 1s 0.3s forwards, shimmer 2s 0.3s infinite;
+    background: linear-gradient(to bottom, #96ff33 25%, #33d3ff 50%, #33ffda 75%, #3a33ff 100%);
+  }
+  .ribbon:nth-child(7) {
+    -webkit-animation: drop 1s 0.35s forwards, shimmer 2s 0.35s infinite;
+            animation: drop 1s 0.35s forwards, shimmer 2s 0.35s infinite;
+    background: linear-gradient(to bottom, #334bff 25%, #33ff3a 50%, #ffa333 75%, #ff9933 100%);
+  }
+  .ribbon:nth-child(8) {
+    -webkit-animation: drop 1s 0.4s forwards, shimmer 2s 0.4s infinite;
+            animation: drop 1s 0.4s forwards, shimmer 2s 0.4s infinite;
+    background: linear-gradient(to bottom, #55ff33 25%, #8bff33 50%, #33ff3a 75%, #8fff33 100%);
+  }
+  .ribbon:nth-child(9) {
+    -webkit-animation: drop 1s 0.45s forwards, shimmer 2s 0.45s infinite;
+            animation: drop 1s 0.45s forwards, shimmer 2s 0.45s infinite;
+    background: linear-gradient(to bottom, #ffc533 25%, #33ffe0 50%, #58ff33 75%, #ffee33 100%);
+  }
+  .ribbon:nth-child(10) {
+    -webkit-animation: drop 1s 0.5s forwards, shimmer 2s 0.5s infinite;
+            animation: drop 1s 0.5s forwards, shimmer 2s 0.5s infinite;
+    background: linear-gradient(to bottom, #3392ff 25%, #ff6633 50%, #33ffff 75%, #3381ff 100%);
+  }
+  
+  @-webkit-keyframes drop {
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  
+  @keyframes drop {
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+  @-webkit-keyframes shimmer {
+    100% {
+      background-position: 50% 70vh;
+    }
+  }
+  @keyframes shimmer {
+    100% {
+      background-position: 50% 70vh;
+    }
+  }
+  .hearts {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 40;
+    height: 12em;
+    width: 12em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    -webkit-animation: rock 3s infinite;
+            animation: rock 3s infinite;
+    -webkit-filter: drop-shadow(0 0 1em #33ffbe);
+            filter: drop-shadow(0 0 1em #33ffbe);
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+  }
+  
+  @-webkit-keyframes rock {
+    50% {
+      -webkit-filter: drop-shadow(0 0 1em #33ccff);
+              filter: drop-shadow(0 0 1em #33ccff);
+      -webkit-transform: translate(-50%, -100%) rotate(22deg);
+              transform: translate(-50%, -100%) rotate(22deg);
+    }
+  }
+  
+  @keyframes rock {
+    50% {
+      -webkit-filter: drop-shadow(0 0 1em #33ccff);
+              filter: drop-shadow(0 0 1em #33ccff);
+      -webkit-transform: translate(-50%, -100%) rotate(22deg);
+              transform: translate(-50%, -100%) rotate(22deg);
+    }
+  }
+  .heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    fill: transparent;
+    -webkit-transform-origin: center 90%;
+            transform-origin: center 90%;
+    -webkit-transform: scale(0) rotate(0);
+            transform: scale(0) rotate(0);
+  }
+  .heart:nth-of-type(1) {
+    -webkit-animation: flower-1 1s 0.55s forwards;
+            animation: flower-1 1s 0.55s forwards;
+  }
+  .heart:nth-of-type(1) path {
+    -webkit-animation: flower-bud-1 2s 0.575s infinite;
+            animation: flower-bud-1 2s 0.575s infinite;
+    fill: rgba(51, 248, 255, 0.75);
+    stroke: rgba(51, 187, 255, 0.5);
+  }
+  .heart:nth-of-type(2) {
+    -webkit-animation: flower-2 1s 0.6s forwards;
+            animation: flower-2 1s 0.6s forwards;
+  }
+  .heart:nth-of-type(2) path {
+    -webkit-animation: flower-bud-2 2s 0.65s infinite;
+            animation: flower-bud-2 2s 0.65s infinite;
+    fill: rgba(99, 51, 255, 0.75);
+    stroke: rgba(255, 122, 51, 0.5);
+  }
+  .heart:nth-of-type(3) {
+    -webkit-animation: flower-3 1s 0.65s forwards;
+            animation: flower-3 1s 0.65s forwards;
+  }
+  .heart:nth-of-type(3) path {
+    -webkit-animation: flower-bud-3 2s 0.725s infinite;
+            animation: flower-bud-3 2s 0.725s infinite;
+    fill: rgba(51, 255, 197, 0.75);
+    stroke: rgba(51, 197, 255, 0.5);
+  }
+  .heart:nth-of-type(4) {
+    -webkit-animation: flower-4 1s 0.7s forwards;
+            animation: flower-4 1s 0.7s forwards;
+  }
+  .heart:nth-of-type(4) path {
+    -webkit-animation: flower-bud-4 2s 0.8s infinite;
+            animation: flower-bud-4 2s 0.8s infinite;
+    fill: rgba(255, 122, 51, 0.75);
+    stroke: rgba(51, 255, 153, 0.5);
+  }
+  .heart:nth-of-type(5) {
+    -webkit-animation: flower-5 1s 0.75s forwards;
+            animation: flower-5 1s 0.75s forwards;
+  }
+  .heart:nth-of-type(5) path {
+    -webkit-animation: flower-bud-5 2s 0.875s infinite;
+            animation: flower-bud-5 2s 0.875s infinite;
+    fill: rgba(51, 78, 255, 0.75);
+    stroke: rgba(255, 228, 51, 0.5);
+  }
+  .heart:nth-of-type(6) {
+    -webkit-animation: flower-6 1s 0.8s forwards;
+            animation: flower-6 1s 0.8s forwards;
+  }
+  .heart:nth-of-type(6) path {
+    -webkit-animation: flower-bud-6 2s 0.95s infinite;
+            animation: flower-bud-6 2s 0.95s infinite;
+    fill: rgba(51, 255, 214, 0.75);
+    stroke: rgba(116, 255, 51, 0.5);
+  }
+  .heart:nth-of-type(7) {
+    -webkit-animation: flower-7 1s 0.85s forwards;
+            animation: flower-7 1s 0.85s forwards;
+  }
+  .heart:nth-of-type(7) path {
+    -webkit-animation: flower-bud-7 2s 1.025s infinite;
+            animation: flower-bud-7 2s 1.025s infinite;
+    fill: rgba(78, 51, 255, 0.75);
+    stroke: rgba(255, 201, 51, 0.5);
+  }
+  .heart:nth-of-type(8) {
+    -webkit-animation: flower-8 1s 0.9s forwards;
+            animation: flower-8 1s 0.9s forwards;
+  }
+  .heart:nth-of-type(8) path {
+    -webkit-animation: flower-bud-8 2s 1.1s infinite;
+            animation: flower-bud-8 2s 1.1s infinite;
+    fill: rgba(51, 255, 163, 0.75);
+    stroke: rgba(129, 255, 51, 0.5);
+  }
+  .heart:nth-of-type(9) {
+    -webkit-animation: flower-9 1s 0.95s forwards;
+            animation: flower-9 1s 0.95s forwards;
+  }
+  .heart:nth-of-type(9) path {
+    -webkit-animation: flower-bud-9 2s 1.175s infinite;
+            animation: flower-bud-9 2s 1.175s infinite;
+    fill: rgba(51, 255, 211, 0.75);
+    stroke: rgba(255, 143, 51, 0.5);
+  }
+  .heart:nth-of-type(10) {
+    -webkit-animation: flower-10 1s 1s forwards;
+            animation: flower-10 1s 1s forwards;
+  }
+  .heart:nth-of-type(10) path {
+    -webkit-animation: flower-bud-10 2s 1.25s infinite;
+            animation: flower-bud-10 2s 1.25s infinite;
+    fill: rgba(255, 146, 51, 0.75);
+    stroke: rgba(71, 51, 255, 0.5);
+  }
+  .heart:nth-of-type(11) {
+    -webkit-animation: flower-11 1s 1.05s forwards;
+            animation: flower-11 1s 1.05s forwards;
+  }
+  .heart:nth-of-type(11) path {
+    -webkit-animation: flower-bud-11 2s 1.325s infinite;
+            animation: flower-bud-11 2s 1.325s infinite;
+    fill: rgba(255, 88, 51, 0.75);
+    stroke: rgba(255, 238, 51, 0.5);
+  }
+  .heart:nth-of-type(12) {
+    -webkit-animation: flower-12 1s 1.1s forwards;
+            animation: flower-12 1s 1.1s forwards;
+  }
+  .heart:nth-of-type(12) path {
+    -webkit-animation: flower-bud-12 2s 1.4s infinite;
+            animation: flower-bud-12 2s 1.4s infinite;
+    fill: rgba(139, 255, 51, 0.75);
+    stroke: rgba(51, 255, 252, 0.5);
+  }
+  .heart path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 84;
+    stroke-dashoffset: 84;
+  }
+  
+  @-webkit-keyframes flower-1 {
+    100% {
+      -webkit-transform: scale(1) rotate(30deg);
+              transform: scale(1) rotate(30deg);
+    }
+  }
+  
+  @keyframes flower-1 {
+    100% {
+      -webkit-transform: scale(1) rotate(30deg);
+              transform: scale(1) rotate(30deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-1 {
+    50% {
+      fill: rgba(51, 245, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-1 {
+    50% {
+      fill: rgba(51, 245, 255, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-2 {
+    100% {
+      -webkit-transform: scale(1) rotate(60deg);
+              transform: scale(1) rotate(60deg);
+    }
+  }
+  @keyframes flower-2 {
+    100% {
+      -webkit-transform: scale(1) rotate(60deg);
+              transform: scale(1) rotate(60deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-2 {
+    50% {
+      fill: rgba(51, 167, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-2 {
+    50% {
+      fill: rgba(51, 167, 255, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-3 {
+    100% {
+      -webkit-transform: scale(1) rotate(90deg);
+              transform: scale(1) rotate(90deg);
+    }
+  }
+  @keyframes flower-3 {
+    100% {
+      -webkit-transform: scale(1) rotate(90deg);
+              transform: scale(1) rotate(90deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-3 {
+    50% {
+      fill: rgba(51, 85, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-3 {
+    50% {
+      fill: rgba(51, 85, 255, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-4 {
+    100% {
+      -webkit-transform: scale(1) rotate(120deg);
+              transform: scale(1) rotate(120deg);
+    }
+  }
+  @keyframes flower-4 {
+    100% {
+      -webkit-transform: scale(1) rotate(120deg);
+              transform: scale(1) rotate(120deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-4 {
+    50% {
+      fill: rgba(139, 255, 51, 0.75);
+    }
+  }
+  @keyframes flower-bud-4 {
+    50% {
+      fill: rgba(139, 255, 51, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-5 {
+    100% {
+      -webkit-transform: scale(1) rotate(150deg);
+              transform: scale(1) rotate(150deg);
+    }
+  }
+  @keyframes flower-5 {
+    100% {
+      -webkit-transform: scale(1) rotate(150deg);
+              transform: scale(1) rotate(150deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-5 {
+    50% {
+      fill: rgba(255, 204, 51, 0.75);
+    }
+  }
+  @keyframes flower-bud-5 {
+    50% {
+      fill: rgba(255, 204, 51, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-6 {
+    100% {
+      -webkit-transform: scale(1) rotate(180deg);
+              transform: scale(1) rotate(180deg);
+    }
+  }
+  @keyframes flower-6 {
+    100% {
+      -webkit-transform: scale(1) rotate(180deg);
+              transform: scale(1) rotate(180deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-6 {
+    50% {
+      fill: rgba(160, 255, 51, 0.75);
+    }
+  }
+  @keyframes flower-bud-6 {
+    50% {
+      fill: rgba(160, 255, 51, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-7 {
+    100% {
+      -webkit-transform: scale(1) rotate(210deg);
+              transform: scale(1) rotate(210deg);
+    }
+  }
+  @keyframes flower-7 {
+    100% {
+      -webkit-transform: scale(1) rotate(210deg);
+              transform: scale(1) rotate(210deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-7 {
+    50% {
+      fill: rgba(68, 51, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-7 {
+    50% {
+      fill: rgba(68, 51, 255, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-8 {
+    100% {
+      -webkit-transform: scale(1) rotate(240deg);
+              transform: scale(1) rotate(240deg);
+    }
+  }
+  @keyframes flower-8 {
+    100% {
+      -webkit-transform: scale(1) rotate(240deg);
+              transform: scale(1) rotate(240deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-8 {
+    50% {
+      fill: rgba(255, 221, 51, 0.75);
+    }
+  }
+  @keyframes flower-bud-8 {
+    50% {
+      fill: rgba(255, 221, 51, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-9 {
+    100% {
+      -webkit-transform: scale(1) rotate(270deg);
+              transform: scale(1) rotate(270deg);
+    }
+  }
+  @keyframes flower-9 {
+    100% {
+      -webkit-transform: scale(1) rotate(270deg);
+              transform: scale(1) rotate(270deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-9 {
+    50% {
+      fill: rgba(54, 51, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-9 {
+    50% {
+      fill: rgba(54, 51, 255, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-10 {
+    100% {
+      -webkit-transform: scale(1) rotate(300deg);
+              transform: scale(1) rotate(300deg);
+    }
+  }
+  @keyframes flower-10 {
+    100% {
+      -webkit-transform: scale(1) rotate(300deg);
+              transform: scale(1) rotate(300deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-10 {
+    50% {
+      fill: rgba(51, 255, 146, 0.75);
+    }
+  }
+  @keyframes flower-bud-10 {
+    50% {
+      fill: rgba(51, 255, 146, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-11 {
+    100% {
+      -webkit-transform: scale(1) rotate(330deg);
+              transform: scale(1) rotate(330deg);
+    }
+  }
+  @keyframes flower-11 {
+    100% {
+      -webkit-transform: scale(1) rotate(330deg);
+              transform: scale(1) rotate(330deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-11 {
+    50% {
+      fill: rgba(156, 255, 51, 0.75);
+    }
+  }
+  @keyframes flower-bud-11 {
+    50% {
+      fill: rgba(156, 255, 51, 0.75);
+    }
+  }
+  @-webkit-keyframes flower-12 {
+    100% {
+      -webkit-transform: scale(1) rotate(360deg);
+              transform: scale(1) rotate(360deg);
+    }
+  }
+  @keyframes flower-12 {
+    100% {
+      -webkit-transform: scale(1) rotate(360deg);
+              transform: scale(1) rotate(360deg);
+    }
+  }
+  @-webkit-keyframes flower-bud-12 {
+    50% {
+      fill: rgba(51, 197, 255, 0.75);
+    }
+  }
+  @keyframes flower-bud-12 {
+    50% {
+      fill: rgba(51, 197, 255, 0.75);
+    }
+  }
+  html {
+    overflow: hidden;
+    height: 100%;
+    background: #f2a;
+    color: #fff;
+  }
+  
+  body {
+    height: 100%;
+  }
+  
