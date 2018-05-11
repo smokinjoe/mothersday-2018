@@ -40,8 +40,12 @@
             animation: draw 2s 1.75s forwards;
   }
   .happy tspan:nth-child(6) {
-    -webkit-animation: draw 2s 1.75s forwards;
-            animation: draw 2s 1.75s forwards;
+    -webkit-animation: draw 2s 1.80s forwards;
+            animation: draw 2s 1.80s forwards;
+  }
+  .happy tspan:nth-child(7), .happy tspan:nth-child(8) {
+    -webkit-animation: draw 2s 2s forwards;
+            animation: draw 2s 2s forwards;
   }
 
   @-webkit-keyframes draw {
