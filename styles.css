@@ -1,0 +1,26 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #F3A99C;
+  }
+  
+  .frame {
+    margin: 0 auto;
+    background: #b46681;
+    box-shadow: inset 1px 0 2px 5px #905267;
+    border-radius: 25% 25% 5px 5px;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .opener {
+    height: 700px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .bubble, .bubble2, .bubble3 {
+    opacity: 0;
+  }
+  
