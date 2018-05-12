@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Rock+Salt);
 @import url(//fonts.googleapis.com/css?family=Permanent+Marker);
+
 .container {
   height: 100vh;
   overflow: hidden;
@@ -18,7 +19,7 @@
 
 .graffiti {
   font-size: 4em;
-  margin-top: 7%;
+  /* margin-top: 7%; */
   position: absolute;
   text-align: center;
   width: 100%;
@@ -43,10 +44,11 @@
 }
 
 .graffiti .callout p {
-    text-align: justify;
+    /* text-align: justify; */
+    text-align: left;
     line-height: 1.4em;
     font-family: 'Helvetica Neue';
-    font-size: .4em;
+    font-size: .3em;
     padding: 0;
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
