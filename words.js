@@ -23,8 +23,19 @@ const DEFAULT_ARRAY = [
   'Trusting'
 ];
 
+// Initializing!
+
 let array = []
 initializeArray();
+
+const tooltipTarget = document.querySelector('.hearts');
+const tooltip = new Tooltip(tooltipTarget, {
+  title: 'Click me!!',
+  trigger: 'manual'
+});
+tooltip.toggle();
+
+// functions for stuff
 
 function initializeArray () {
   array = DEFAULT_ARRAY.slice();
@@ -61,6 +72,8 @@ function randomWord () {
 function clickHandler () {
   const words = randomWord().split('');
 
+  tooltip.dispose();
+
   $('tspan').each((i, span) => {
     let word = typeof words[i] !== 'undefined' ? words[i] : '';
     word = word === ' ' ? '&nbsp;' : word;
@@ -68,10 +81,14 @@ function clickHandler () {
     $(span).html(word);
   });
 
-  $('#svg').removeClass('happy').addClass('happy');
+  // $('#svg').removeClass('happy').addClass('happy');
 }
+
+// Let's get 'er done!
 
 $(document).ready(function () {
   $('.hearts').on('click', clickHandler);
+  setTimeout(() => {
+    tooltip.dispose();
+  }, 8000);
 });
-
