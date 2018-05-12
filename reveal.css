@@ -55,6 +55,30 @@
   -webkit-animation: draw 2s 1.95s forwards;
           animation: draw 2s 1.95s forwards;
 }
+.happy tspan:nth-child(10) {
+  -webkit-animation: draw 2s 2.00s forwards;
+          animation: draw 2s 2.00s forwards;
+}
+.happy tspan:nth-child(11) {
+  -webkit-animation: draw 2s 2.05s forwards;
+          animation: draw 2s 2.05s forwards;
+}
+.happy tspan:nth-child(12) {
+  -webkit-animation: draw 2s 2.10s forwards;
+          animation: draw 2s 2.10s forwards;
+}
+.happy tspan:nth-child(13) {
+  -webkit-animation: draw 2s 2.15s forwards;
+          animation: draw 2s 2.15s forwards;
+}
+.happy tspan:nth-child(14) {
+  -webkit-animation: draw 2s 2.20s forwards;
+          animation: draw 2s 2.20s forwards;
+}
+.happy tspan:nth-child(15) {
+  -webkit-animation: draw 2s 2.25s forwards;
+          animation: draw 2s 2.25s forwards;
+}
 
 @-webkit-keyframes draw {
   20%,
