@@ -10,7 +10,17 @@ const DEFAULT_ARRAY = [
   'Charming',
   'Magical',
   'Beaming',
-  'Inspiration'
+  'Inspirational',
+  'Beautiful',
+  'Guardian',
+  'Angel',
+  'Always there',
+  'Helpful',
+  'Wicked Smaht',
+  'Super Genius',
+  'Knows Best',
+  'Funny',
+  'Trusting'
 ];
 
 let array = []
@@ -45,33 +55,20 @@ function randomWord () {
   if (array.length === 0) {
     initializeArray()
   }
-  // const index = Math.floor(Math.random() * array.length);
   return array.pop();
 }
 
 function clickHandler () {
-  // $('tspan').remove();
-
-  const words = randomWord();
-
-  console.log(words);
-
-  words.split('');
+  const words = randomWord().split('');
 
   $('tspan').each((i, span) => {
     let word = typeof words[i] !== 'undefined' ? words[i] : '';
-    $(span).text(word);
+    word = word === ' ' ? '&nbsp;' : word;
+
+    $(span).html(word);
   });
 
-  // words.forEach(l => {
-  //   console.log('JOE: l: ', l);
-  //   $('#text-container').append('<tspan>' + l + '</tspan>');
-  // });
-
   $('#svg').removeClass('happy').addClass('happy');
-  // $('.happy').beginElement();
-  // document.getElementById('svg').beginElement();
-  // $('#svg').detach().prependTo('body');
 }
 
 $(document).ready(function () {
