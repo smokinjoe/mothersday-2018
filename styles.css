@@ -35,26 +35,6 @@
   font-family: 'Permanent Marker', cursive;
 }
 
-.graffiti .callout {
-    padding: 15px;
-    border: 1px solid #666;
-    background: rgba(255, 255, 255, 0.75);
-    width: 80%;
-    margin-left: 10%;
-}
-
-.graffiti .callout p {
-    /* text-align: justify; */
-    text-align: left;
-    line-height: 1.4em;
-    font-family: 'Helvetica Neue';
-    font-size: .3em;
-    padding: 0;
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;}
-
 .grass {
   background: url(https://images.unsplash.com/photo-1457536610610-bf4b249617c7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=79f48ca96e45be12bb0754e73c28e207);
   margin-top: -30vh;
@@ -77,4 +57,47 @@
   background-size: cover;
   width: 20%;
   border-right: 2px solid #444;
+}
+
+/* =========
+// Joe's custom styles
+// =================*/
+
+.graffiti .callout {
+  padding: 15px;
+  border: 1px solid #666;
+  background: rgba(255, 255, 255, 0.75);
+  width: 80%;
+  margin-left: 10%;
+}
+
+.graffiti .callout p {
+  /* text-align: justify; */
+  text-align: left;
+  line-height: 1.4em;
+  font-family: 'Helvetica Neue';
+  font-size: .3em;
+  padding: 0;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/*============
+// Overrides for mobile
+//==========*/
+
+@media screen and (max-width: 600px) {
+  body, p {
+    margin: 0px;
+  }
+
+  .graffiti .callout {
+    margin-left: 6%;
+  }
+
+  .graffiti .callout p {
+    font-size: .25em;
+  }
 }
