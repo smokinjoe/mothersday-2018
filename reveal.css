@@ -189,7 +189,8 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    z-index: 40;
+    /* z-index: 40; */
+    z-index: 999;
     height: 12em;
     width: 12em;
     margin-top: 0;
