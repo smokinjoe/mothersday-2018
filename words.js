@@ -12,7 +12,7 @@ const DEFAULT_ARRAY = [
   'Beaming',
   'Inspirational',
   'Beautiful',
-  'Guardian',
+  'My Guardian',
   'Angel',
   'Always There',
   'Helpful',
@@ -20,7 +20,14 @@ const DEFAULT_ARRAY = [
   'Super Genius',
   'Knows Best',
   'Funny',
-  'Trusting'
+  'Trusting',
+  'Fancy',
+  'Ingenious',
+  'Clever',
+  'Fun Filled',
+  'Unrivaled',
+  'Helpful',
+  'Thoughtful'
 ];
 
 // Initializing!
