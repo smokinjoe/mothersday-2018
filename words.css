@@ -11,6 +11,7 @@
   text-anchor: middle;
 }
 .happy tspan {
+  text-shadow: #000 1px 0 10px;
   stroke: transparent;
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
@@ -813,4 +814,10 @@ p.bold {
     top: calc(50% - 5px);
     margin-left: 0;
     margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .happy {
+    font-size: 11vmin;
+  }
 }

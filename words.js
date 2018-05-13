@@ -39,8 +39,7 @@ tooltip.toggle();
 // functions for stuff
 
 function initializeArray () {
-  // array = DEFAULT_ARRAY.slice();
-  array = ['Inspirational', 'Always There', 'Wicked Smaht'];
+  array = DEFAULT_ARRAY.slice();
   shuffle(array);
 }
 
