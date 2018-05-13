@@ -727,6 +727,8 @@ p.bold {
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
     padding: 10px;
     text-align: center;
+    /* Joe's style */
+    z-index: 999;
 }
 .style5 .tooltip {
     background: #1E252B;

@@ -14,7 +14,7 @@ const DEFAULT_ARRAY = [
   'Beautiful',
   'Guardian',
   'Angel',
-  'Always there',
+  'Always There',
   'Helpful',
   'Wicked Smaht',
   'Super Genius',
@@ -31,14 +31,16 @@ initializeArray();
 const tooltipTarget = document.querySelector('.hearts');
 const tooltip = new Tooltip(tooltipTarget, {
   title: 'Click me!!',
-  trigger: 'manual'
+  trigger: 'manual',
+  placement: 'right'
 });
 tooltip.toggle();
 
 // functions for stuff
 
 function initializeArray () {
-  array = DEFAULT_ARRAY.slice();
+  // array = DEFAULT_ARRAY.slice();
+  array = ['Inspirational', 'Always There', 'Wicked Smaht'];
   shuffle(array);
 }
 
