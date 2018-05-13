@@ -200,3 +200,14 @@ body {
         -ms-transform-origin: 100% 100%;
             transform-origin :100% 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .callout {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .opener {
+    height: 400px;
+  }
+}
